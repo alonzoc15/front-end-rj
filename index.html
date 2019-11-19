@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Recipe Junkie!</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css">
+    <link rel="stylesheet" href="styles.css" type="text/css">
+    <script defer src=""></script>
+</head>
+
+<body>
+    <section class="hero is-small">
+    <div class="hero-body">
+        <div class="container">
+            <h1 class="title">Recipe Junkie</h1>
+        </div>
+    </div>
+</section>
+
+
+<div id="foodPicture"><img src="food1.jpg"></div>
+<form id="submitform">
+<div class="field">
+    <div class="control has-icons-left has-icons-right">
+    <input class="input submit" type="text" placeholder="Enter recipe">
+    <span class="icon is-small is-left">
+        <i class="fas fa-user"></i>
+    </span>
+    <span class="icon is-small is-right">
+        <i class="fas fa-check"></i>
+    </span>
+</form>
+
+    <div id="recipelist" style="text-align: center"></div>
+    <a></a>
+    <div id="foodGang"></div>
+    </div>
+    </div>
+    </div>
+    <div class="block">
+        <nav class="pagination">
+            <a href="#" class="pagination-previous is-danger">Previous</a>
+            <a href="#" class="pagination-next">Next</a>
+            <ul class="pagination-list">
+                <li><a href="#" class="pagination-link is-danger">1</a></li>
+                <li><a href="boxers.html" class="pagination-link">2</a></li>
+                <li><a href="#" class="pagination-link">3</a></li>
+
+            </ul>
+            <div id="output"></div>
+
+            <!-- <script>
+
+                fetch("https://cors-anywhere.herokuapp.com/http://www.recipepuppy.com/api/?i=onions,garlic&q=chicken&p=3")
+                .then(result => {
+                    //console.log(result);
+                    return result.json();
+                })
+                .then(data =>{
+                    const chicken = data.results[2];
+                    console.log(chicken);
+                    console.log(chicken.ingredients);
+                })
+                .catch(error => console.log(error));
+        </script>        -->
+            <script src="js.js"></script>
+
+</body>
+
+</html>
